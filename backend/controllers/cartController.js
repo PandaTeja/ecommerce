@@ -34,7 +34,7 @@ exports.checkout = (req, res) => {
       validCode.used = true;
       usedCodes.add(discountCode);
 
-      totalAmount *= 0.9; // Apply a 10% discount
+      totalAmount *= 0.9;
     }
 
     orders.push({ userId, items: [...cart], totalAmount });
